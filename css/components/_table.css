@@ -1,0 +1,22 @@
+.table-wrapper{
+  overflow: auto;
+}
+table {
+  @apply w-full;
+}
+
+table.table-striped tbody tr:nth-child(even) {
+  @apply bg-light/20;
+}
+
+table thead{
+  @apply text-darker;
+}
+
+table thead th{
+  @apply p-2 text-left border-b border-darker/50;
+}
+
+table tbody td{
+  @apply p-2 border-b border-light;
+}

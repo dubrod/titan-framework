@@ -1,0 +1,39 @@
+.alert:empty{display:none; margin: 0; padding: 0;}
+.alert svg{display: inline-block; margin-right: .5rem;}
+
+.alert,.error{
+  @apply block p-2 mb-4 bg-light border border-dark/50 rounded;
+}
+
+.alert--danger,.error{
+  @apply text-danger-border/80 bg-danger border-danger-border;
+}
+
+.text--danger{
+  @apply text-danger;
+}
+
+.alert--info{
+  @apply bg-info text-info-border border-info-border;
+}
+.text--info{
+  @apply text-info-border;
+}
+
+.alert--success{
+  @apply bg-success text-[#496c4e] border-success-border;
+}
+.text--success{
+  @apply text-success-border;
+}
+
+.alert--warning{
+  @apply bg-warning text-white/90 border-warning-border;
+}
+.text--warning{
+  @apply text-warning;
+}
+
+.alert--dark{
+  @apply bg-dark text-light/90 border-darker;
+}

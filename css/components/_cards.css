@@ -1,0 +1,36 @@
+.card {
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  @apply bg-light rounded-md relative flex flex-col;
+}
+
+.card--body {
+  flex: 1 1 auto;
+  @apply p-2 bg-white rounded-b-md leading-relaxed text-sm;
+}
+.card--body_text {margin-bottom: 1rem;}
+
+.card--img_top {@apply w-full rounded-tl-md rounded-tr-md;}
+
+.card--body_date{@apply uppercase text-slate-light text-xs;}
+
+.card--body_title{@apply font-heading text-primary py-2;}
+
+.card--row{
+  @apply flex-col md:flex-row md:rounded-tr-md;
+  .card--body{
+    @apply md:rounded-tr-md;
+  }
+}
+
+.card--img_left {
+  @apply w-full md:w-[23%] rounded-tl-md rounded-tr-md md:rounded-bl-md md:rounded-tr-[0];
+}
+
+.card--pinned{
+  @apply absolute p-2 top-[-1rem] right-[1rem] rounded-md bg-primary text-white;
+  font-size: 11px;
+  svg{display: inline-block;}
+}

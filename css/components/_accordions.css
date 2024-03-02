@@ -1,0 +1,28 @@
+details{
+  @apply bg-gray-100 border border-gray-200 overflow-hidden;
+  .details-body{
+    @apply py-4 px-8 leading-relaxed text-sm transition-all duration-500;
+  }
+}
+summary {
+  list-style: none;
+  @apply relative cursor-pointer block font-bold py-4 pl-8 pr-2 text-gray-600 hover:bg-gray-200;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary:before {
+  content: " + ";
+  font-size: 1.1rem;
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 9px;
+}
+
+details[open] > summary {
+  @apply text-primary mb-2 border-b border-gray-200;
+}
+details[open] > summary:before {
+  content: " - "; font-size: 1.6rem; left:10px; top:9px;
+}

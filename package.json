@@ -1,0 +1,48 @@
+{
+  "name": "titanframework",
+  "description": "2023 UI",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dubrod/titan-framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulpjs/gulp.git"
+  },
+  "author": "Wayne Roddy <dubrodfc@gmail.com>",
+  "tags": [],
+  "files": [],
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.1",
+    "eslint": "^8.4.1",
+    "eslint-watch": "^8.0.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^3.0.0",
+    "uglify-js": "^3.14.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not IE 11"
+  ],
+  "scripts": {
+    "build-webp": "node build/process_images/to_webp.js",
+    "watch-css": "postcss css/titan.css --dir build/css --watch",
+    "watch-js": "esw -w js -o errors/log.js",
+    "build-js": "uglifyjs js/init_ui.js js/aria_nav.js js/mobile_open.js js/mobile_close.js js/mobile_toggle.js js/format_phone.js js/details_accordion.js js/carousel.js -o build/js/titan.min.js -c"
+  },
+  "engines": {
+    "node": ">= 0.9"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gulpjs/gulp/issues"
+  },
+  "main": "gulpfile.js",
+  "dependencies": {
+    "cssnano": "^5.0.12",
+    "postcss-sort-media-queries": "^4.3.0",
+    "postcss-use": "^3.0.0",
+    "sharp": "^0.31.3"
+  }
+}

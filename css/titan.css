@@ -1,0 +1,63 @@
+@import '_tailwind.css';
+@import '_a11y.css';
+@import 'util/_utils.css';
+@import 'util/_flex.css';
+@import 'util/_padding.css';
+@import 'util/_typo.css';
+@import 'util/_animations.css';
+@import '_body.css';
+@import '_header.css';
+@import '_footer.css';
+@import 'util/_mobile-nav.css';
+@import 'components/_aria-nav.css';
+@import 'components/_buttons.css';
+@import 'components/_alerts.css';
+@import 'components/_grid.css';
+@import 'components/_forms.css';
+@import 'components/_columns.css';
+@import 'components/_table.css';
+@import 'components/_cards.css';
+@import 'components/_social.css';
+@import 'components/_carousel.css';
+@import 'components/_accordions.css';
+@import 'components/_blog.css';
+@import 'components/_hero.css';
+
+
+.bg--white{
+  background-color: #FFF;
+}
+
+.bg--black{
+  background-color: #000;
+}
+
+.bg--light{
+  @apply bg-gray-100;
+}
+
+.bg--dark{
+  @apply bg-dark;
+}
+
+.bg--darker{
+  @apply bg-darker;
+}
+
+.bg--primary{
+  @apply bg-primary;
+}
+
+.bg--secondary{
+  @apply bg-secondary;
+}
+
+.bg--tertiary{
+  @apply bg-tertiary;
+}
+
+
+pre{
+  @apply p-4 rounded bg-white border border-dark text-sm;
+  white-space: normal;
+}

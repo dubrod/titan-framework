@@ -1,0 +1,8 @@
+body{
+  @apply text-dark leading-tight font-body bg-body
+  pt-12 md:pt-0;
+}
+
+a{
+  @apply text-primary hover:text-primary-hover;
+}

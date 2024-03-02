@@ -1,0 +1,117 @@
+button svg{pointer-events: none;}
+.btn svg{pointer-events: none; vertical-align: middle; display: inline-block;}
+.btn{
+  @apply bg-primary rounded py-3 px-4 text-center inline-block;
+  color: #FFF;
+  text-decoration: none;
+  transition: background-color .3s ease;
+  cursor: pointer;
+
+  &:hover,&:focus{
+    @apply bg-primary-hover text-white;
+  }
+
+  &:focus{
+    @apply outline-primary;
+  }
+}
+
+.btn--xs{
+  @apply py-1 px-2 text-xs;
+}
+
+.btn--sm{
+  @apply py-2 px-2 text-sm;
+}
+
+.btn--primary{
+  @apply bg-primary text-white;
+
+  &:hover,&:focus{
+    @apply bg-primary-hover text-white;
+  }
+  &:focus{
+    @apply outline-primary;
+  }
+}
+
+.btn--primary-outline{
+  @apply bg-transparent border border-primary text-primary;
+
+  &:hover,&:focus{
+    @apply bg-primary-hover border-primary-hover text-white;
+  }
+  &:focus{
+    @apply outline-primary;
+  }
+}
+
+
+
+.btn--secondary{
+  @apply bg-secondary text-black/60;
+
+  &:hover,&:focus{
+    @apply bg-secondary-hover text-black/80;
+  }
+  &:focus{
+    @apply outline-secondary;
+  }
+}
+
+.btn--secondary-outline{
+  @apply bg-transparent border border-secondary text-secondary;
+
+  &:hover,&:focus{
+    @apply bg-secondary-hover border-secondary-hover text-black/80;
+  }
+  &:focus{
+    @apply outline-secondary;
+  }
+}
+
+
+.btn--tertiary{
+  @apply bg-tertiary text-black/60;
+
+  &:hover,&:focus{
+    @apply bg-tertiary-hover text-black/80;
+  }
+  &:focus{
+    @apply outline-tertiary;
+  }
+}
+
+.btn--tertiary-outline{
+  @apply bg-transparent border border-tertiary text-tertiary;
+
+  &:hover,&:focus{
+    @apply bg-tertiary-hover border-tertiary-hover text-black/80;
+  }
+  &:focus{
+    @apply outline-tertiary;
+  }
+}
+
+
+.btn--light{
+  @apply bg-slate-light text-white;
+
+  &:hover,&:focus{
+    @apply bg-slate text-white;
+  }
+  &:focus{
+    @apply outline-slate;
+  }
+}
+
+.btn--dark{
+  @apply bg-dark text-white;
+
+  &:hover,&:focus{
+    @apply bg-darker text-white;
+  }
+  &:focus{
+    @apply outline-darker;
+  }
+}

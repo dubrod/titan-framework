@@ -1,0 +1,17 @@
+@keyframes marginDown {
+from {margin-top: -400px;}
+to   {margin-top: 0;}
+}
+
+header{
+  @apply fixed top-0 z-[999] md:relative w-full bg-white;
+  &.fixed{
+    position: fixed;
+    @apply border-b border-light shadow;
+    animation-name: marginDown;animation-duration: .4s;
+  }
+}
+header *{
+  @apply focus:ring-primary focus:ring-1 ring-inset;
+  outline:none;
+}

@@ -1,0 +1,27 @@
+/* used with getPage */
+.pageNav{
+  @apply mb-2;
+
+
+  li {
+  	@apply inline-block float-left pr-2 mb-2;
+
+    a {
+  	  @apply bg-tertiary block px-3 py-2 text-black/60 rounded-sm transition duration-300
+      hover:bg-tertiary-hover hover:text-black/80;
+      &.active {
+      	@apply bg-dark/70 text-light;
+      }
+    }
+  }
+
+}
+
+.tags{
+  @apply py-2;
+}
+
+.tag{
+  @apply rounded block text-sm py-1 px-2 bg-gray-200 text-black/60 transition duration-300
+  hover:bg-tertiary hover:text-black/80;
+}

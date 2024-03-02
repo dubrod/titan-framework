@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Titan - Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/titan.css">
+</head>
+
+<body>
+<a href="[[~[[*id]]]]#main" class="sr-skip">Skip to Content</a>
+<a href="[[~[[*id]]]]#footer" class="sr-skip">Skip to Footer</a>
+
+<header role="banner" id="header" class="bg--white" tabindex="0">
+  <div class="container">
+    <div class="flex p-2">
+      <div class="flex--start">
+        <a href="index.html" class="block"><img src="../../assets/img/Titan-chick-300.png" alt="" width="50px"></a>
+      </div>
+      <div class="flex--start">
+        <h2 class="p-2">Titan</h2>
+      </div>
+      <div class="md-w-full">
+
+        <!-- Aria-Nav -->
+        <nav role="navigation" id="navigation">
+
+          <div id="mobileLogo">
+            <a href="index.html" class="block"><img src="../../assets/img/Titan-chick-300.png" alt="" width="50px"></a>
+          </div>
+
+          <ul role="menu" aria-label="Main" aria-hidden="false" id="mainMenu">
+
+            <li role="menuitem" aria-haspopup="true" class="has-sub-menu">
+              <a href="#" class="aria-menu-parent menu-parent">Base</a>
+              <button class="mobile-toggle" tabindex="-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                </svg>
+              </button>
+              <ul role="menu" aria-label="Base" class="aria-subnav">
+                <li role="menuitem">
+                  <a href="type.html">Typography</a>
+                </li>
+                <li role="menuitem">
+                  <a href="colors.html">Colors</a>
+                </li>
+                <li role="menuitem">
+                  <a href="alerts.html">Alerts</a>
+                </li>
+                <li role="menuitem">
+                  <a href="grid.html">Grid</a>
+                </li>
+                <li role="menuitem">
+                  <a href="table.html">Table</a>
+                </li>
+                <li role="menuitem">
+                  <a href="forms.html">Forms</a>
+                </li>
+                <li role="menuitem">
+                  <a href="buttons.html">Buttons</a>
+                </li>
+              </ul>
+            </li>
+
+            <li role="menuitem" aria-haspopup="true" class="has-sub-menu">
+              <a href="#" class="aria-menu-parent menu-parent">Components</a>
+              <button class="mobile-toggle" tabindex="-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+                </svg>
+              </button>
+              <ul role="menu" aria-label="Components" class="aria-subnav">
+                <li role="menuitem">
+                  <a href="cards.html">Cards</a>
+                </li>
+                <li role="menuitem">
+                  <a href="carousel.html">Carousel</a>
+                </li>
+                <li role="menuitem">
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li role="menuitem">
+                  <a href="accordions.html">Accordion</a>
+                </li>
+                <li role="menuitem">
+                  <a href="hero.html">Hero</a>
+                </li>
+              </ul>
+            </li>
+
+            <li role="menuitem" aria-haspopup="false">
+              <a href="#" class="menu-parent">Blank</a>
+            </li>
+
+          </ul>
+
+          <!--Mobile-Close-->
+
+          <button type="button" id="mobileClose">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+
+          <!--/Mobile-Close-->
+
+        </nav>
+        <!-- /Aria-Nav -->
+
+      </div>
+    </div>
+  </div>
+
+  <!--Mobile-Open-->
+
+  <button type="button" id="mobileOpen" aria-expanded="false">
+    <span class="sr-only">Open menu</span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+
+  <!--/Mobile-Open-->
+
+</header>
+
+<main role="main" id="main" class="py-12" tabindex="0">
+  <div class="container">
+    <h1 class="mb-8">Grid</h1>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-4 mb-4">
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+    </div>
+
+    <div class="grid md:grid-cols-6 gap-4 mb-8">
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+      <div class="bg--white p-4"></div>
+    </div>
+
+    <h1 class="mb-8">Columns</h1>
+
+    <pre class="mb-8">
+      &lt;div class="flex"><br>
+        &lt;div class="one-third bg--white p-4">.one-third&lt;/div><br>
+        &lt;div class="two-third bg--light p-4">.two-third&lt;/div><br>
+      &lt;/div>
+    </pre>
+
+    <div class="flex flex--col md-flex-row">
+      <div class="md-one-third bg--white p-4">.one-third</div>
+      <div class="md-two-third bg--light p-4">.two-third</div>
+    </div>
+
+  </div>
+</main>
+
+<footer role="complementary" id="footer" tabindex="0">
+  <div class="container">
+    <p class="p-2">&copy; Copyright 2022.</p>
+  </div>
+</footer>
+
+<script src="../js/titan.min.js"></script>
+</body>
+</html>

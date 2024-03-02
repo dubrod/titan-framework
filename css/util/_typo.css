@@ -1,0 +1,77 @@
+.article{
+  p{
+    @apply pb-2;
+  }
+  ul,ol{
+    margin: .5rem .5rem 1rem 2rem;
+    list-style-position: outside;
+  }
+  ul{list-style: disc;}
+  ol{list-style: decimal;}
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--primary{
+  @apply text-primary;
+}
+
+.text--secondary{
+  @apply text-secondary;
+}
+
+.text--tertiary{
+  @apply text-tertiary;
+}
+
+.text--white{
+  @apply text-white;
+}
+
+.text--light{
+  @apply text-gray-100;
+}
+
+.text--dark{
+  @apply text-dark;
+}
+
+.text--darker{
+  @apply text-darker;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--narrow{
+  @apply mx-auto px-8 md:w-[70%];
+}
+
+.text--xs{@apply text-xs;}
+.text--sm{@apply text-sm;}
+.text--xl{@apply text-xl;}
+.text--2xl{@apply text-2xl;}
+.text--3xl{@apply text-3xl;}
+
+h1{
+  @apply text-4xl font-heading font-bold;
+}
+
+h2{
+  @apply text-3xl font-heading font-bold;
+}
+
+h3{
+  @apply text-3xl font-heading font-bold;
+}
+
+h4{
+  @apply text-xl font-heading;
+}

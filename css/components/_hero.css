@@ -1,0 +1,7 @@
+.hero{
+  @apply py-32 md:py-44 bg-cover;
+
+  .hero--title{
+    @apply text-center md:text-left px-4;
+  }
+}

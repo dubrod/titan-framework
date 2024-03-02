@@ -1,0 +1,24 @@
+.sr-only{
+  position: absolute !important;
+  height: 1px; width: 1px; border: 0; padding: 0;
+  overflow: hidden;clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; border-width: 0;
+}
+
+.sr-skip{position:absolute;left:-9999px;}
+.sr-skip:active,.sr-skip:focus{
+    display:block;
+    z-index: 9999;
+    top:5px;
+    left:5px;
+    padding: 2px 5px;
+    font-size: .9rem;
+    @apply bg-primary text-white;
+}
+
+/*
+body *:focus,body *:active{
+  @apply focus:ring-primary focus:ring-1 ring-inset;
+  outline:none;
+}
+*/

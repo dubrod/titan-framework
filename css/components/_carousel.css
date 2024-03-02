@@ -1,0 +1,88 @@
+/*
+Rules:
+- In each Carousel the `summary` ID must be unique<br>
+- In each Previous/Next Button having a `Carousel Name` will help Screen Readers seem unique<br>
+- The class `c-item` is required on the element you want to move<br>
+- add the attribute `data-animation="fadein"` with a class that triggers an animation
+*/
+.carousel{
+    overflow:hidden;
+    position:relative;
+
+    button{
+        top:35%;
+        z-index: 99;
+        border-radius: 50%;
+        @apply transition duration-300 p-0 w-[30px] h-[30px] absolute;
+
+        svg{pointer-events: none; margin: 0 auto;}
+
+        &:hover{
+          opacity:1;
+        }
+        &.next{
+          right:0;
+        }
+        &.prev{
+          left:0;
+        }
+    }
+
+    .c-item{
+      display:none;
+      overflow:hidden;
+      &.active{display:block;}
+
+      > p{
+        @apply py-8 px-12 md:px-20;
+      }
+
+      figcaption{
+        @apply px-10 md:px-24 float-right font-heading;
+      }
+    }
+}
+
+.carousel--cards{
+  @apply overflow-visible mx-auto max-w-[1400px];
+  button{
+    top:45%;
+    &.next{
+      right:-36px;
+    }
+    &.prev{
+      left:-36px;
+    }
+  }
+}
+
+.carousel--cards_container{
+  overflow: hidden;
+  @apply md:p-4;
+}
+
+@media (max-width: 768px){
+  .carousel--cards{
+    .c-item{
+      overflow-x: auto;
+      .grid{
+        width: 1000px;
+      }
+    }
+  }
+}
+
+.carousel--slider{
+  .hero .hero--title{
+    @apply px-8;
+  }
+  button{
+    @apply top-[48%] text-white/50 hover:bg-black/30 hover:text-white/80;
+    &.next{
+      @apply right-1 md:right-3 lg:right-5;
+    }
+    &.prev{
+      @apply left-1 md:left-3 lg:left-5;
+    }
+  }
+}

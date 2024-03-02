@@ -1,0 +1,51 @@
+.one-third{
+  flex-basis: 33.7%;
+  width: 33.7%;
+}
+
+.two-third{
+  flex-basis: 66.3%;
+  width: 66.3%;
+}
+
+.w-half{
+  flex-basis: 49.97%;
+  width: 49.97%;
+}
+
+@media (min-width: 768px) {
+
+     .md-one-third{
+          flex-basis: 33.7%;
+          width: 33.7%;
+     }
+
+     .md-two-third{
+          flex-basis: 66.3%;
+          width: 66.3%;
+     }
+
+     .md-w-half{
+       flex-basis: 49.97%;
+       width: 49.97%;
+     }
+
+}
+
+
+@media (min-width: 1024px) {
+     .lg-one-third{
+          flex-basis: 33.7%;
+          width: 33.7%;
+     }
+
+     .lg-two-third{
+          flex-basis: 66.3%;
+          width: 66.3%;
+     }
+     .lg-w-half{
+       flex-basis: 49.97%;
+       width: 49.97%;
+     }
+
+}

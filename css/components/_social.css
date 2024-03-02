@@ -1,0 +1,6 @@
+.social-icons{
+  @apply text-primary;
+  svg{
+    @apply w-6;
+  }
+}
